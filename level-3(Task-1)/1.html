@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    font-family:Arial;
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.gallery img{
+    width:250px;
+    height:210px;
+    object-fit:cover;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.gallery img:hover{
+    transform:scale(1.2);
+}
+
+#big{
+    width:500px;
+    height:400px;
+    margin-top:20px;
+    object-fit:cover;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Image Gallery</h2>
+
+<div class="gallery">
+    <img src="https://picsum.photos/id/54/367/267" onclick="show(this.src)">
+    
+    <img src="https://picsum.photos/id/71/367/267" onclick="show(this.src)">
+    
+    <img src="https://picsum.photos/id/29/367/267" onclick="show(this.src)">
+</div>
+
+<script>
+function show(pic){
+    document.getElementById("big").src = pic;
+}
+</script>
+
+</body>
+</html>

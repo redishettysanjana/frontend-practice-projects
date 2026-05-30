@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Explorer</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    nav{
+      background:#0f172a;
+      color:white;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      padding:15px 8%;
+      position:sticky;
+      top:0;
+    }
+
+    nav h1{
+      font-size:28px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:25px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop')
+      center/cover no-repeat;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content{
+      background:rgba(0,0,0,0.5);
+      padding:40px;
+      border-radius:15px;
+      max-width:700px;
+    }
+
+    .hero h2{
+      font-size:50px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:18px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      background:#38bdf8;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#0284c7;
+    }
+
+    .places{
+      padding:60px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:36px;
+      color:#0f172a;
+    }
+
+    .card-container{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+    }
+
+    .card p{
+      margin-bottom:15px;
+      line-height:1.5;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    @media (max-width: 900px){
+
+      .hero h2{
+        font-size:38px;
+      }
+
+      .card-container{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+    }
+
+    @media (max-width: 600px){
+
+      .hero{
+        height:75vh;
+      }
+
+      .hero h2{
+        font-size:30px;
+      }
+
+      .hero p{
+        font-size:16px;
+      }
+
+      .card-container{
+        grid-template-columns:1fr;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+      }
+
+      .hero-content{
+        padding:25px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>Travel Explorer</h1>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+      <h2>Discover Beautiful Places</h2>
+
+      <p>Explore amazing destinations around the world with responsive modern web design.</p>
+
+      <a href="#" class="btn">Explore Now</a>
+    </div>
+
+  </section>
+
+  <section class="places">
+
+    <h2 class="section-title">Popular Destinations</h2>
+
+    <div class="card-container">
+
+      <!-- Card 1 -->
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Mountain">
+
+        <div class="card-content">
+          <h3>Swiss Mountains</h3>
+
+          <p>
+            Enjoy breathtaking mountain views and peaceful nature experiences.
+          </p>
+
+          <a href="#" class="btn">Explore More</a>
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop" alt="Beach">
+
+        <div class="card-content">
+          <h3>Maldives Beach</h3>
+
+          <p>
+            Relax on crystal-clear beaches and experience luxury island life.
+          </p>
+
+          <a href="#" class="btn">Explore More</a>
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="City">
+
+        <div class="card-content">
+          <h3>New York City</h3>
+
+          <p>
+            Experience modern city life, nightlife, and iconic landmarks.
+          </p>
+
+          <a href="#" class="btn">Explore More</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Travel Explorer | Responsive Website Design</p>
+  </footer>
+  
+
+</body>
+</html>
