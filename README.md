@@ -1,32 +1,28 @@
-# Cognifyz Internship Tasks
+# Responsive Web Projects
 
-This Repository contains the tasks completed as part of the **Cognifyz Technologies Web Development Internship**.
+This repository contains a collection of front-end web development projects built using HTML5, CSS3, and Bootstrap.
 
-## Tasks Completed
+## Projects
 
 ### Level 2 - Task 1
-
-* Created a responsive card component using a front-end framework.
-* Implemented a responsive grid layout.
+- Responsive card component
+- Responsive grid layout
 
 ### Level 2 - Task 2
-
-* Converted a webpage into a responsive design using CSS media queries.
-* Developed a mobile-friendly navigation menu with a hamburger menu.
+- Responsive webpage using CSS media queries
+- Mobile-friendly navigation menu
 
 ### Level 3 - Task 1
-
-* Created an image gallery with interactive image enlargement.
-* Developed an automatic image slideshow using HTML and CSS.
+- Interactive image gallery
+- Automatic image slideshow using HTML and CSS
 
 ### Level 3 - Task 2
-
-* Designed a responsive landing page for a Web Developer Internship.
-* Included internship overview, highlights, skills, CTA buttons, and contact information.
+- Responsive Web Developer Internship landing page
+- Call-to-action and contact section
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* Bootstrap
-* Git & GitHub
+- HTML5
+- CSS3
+- Bootstrap
+- Git & GitHub
