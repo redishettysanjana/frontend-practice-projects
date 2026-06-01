@@ -1,6 +1,6 @@
 # Cognifyz Internship Tasks
 
-This repository contains the tasks completed as part of the **Cognifyz Technologies Web Development Internship**.
+This Repository contains the tasks completed as part of the **Cognifyz Technologies Web Development Internship**.
 
 ## Tasks Completed
 
