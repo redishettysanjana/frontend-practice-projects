@@ -1,6 +1,6 @@
 # Responsive Web Projects
 
-This repository contains a collection of front-end web development projects built using HTML5, CSS3, and Bootstrap.
+This repository contains a collection of front-end web development projects built using HTML, CSS, and Bootstrap.
 
 ## Projects
 
@@ -21,8 +21,7 @@ This repository contains a collection of front-end web development projects buil
 - Call-to-action and contact section
 
 ## Technologies Used
-
-- HTML5
-- CSS3
+- HTML
+- CSS
 - Bootstrap
 - Git & GitHub
